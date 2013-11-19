@@ -2,9 +2,11 @@ package net.thoughtaboutyou.app.android;
 
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectView;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -51,4 +53,29 @@ public class MainActivity extends RoboActivity {
 		return true;
 	}
 
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle item selection
+		switch (item.getItemId()) {
+		case R.id.action_about:
+			showAboutDialog();
+
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+	}
+
+	private void showAboutDialog() {
+		// TODO: should this view be injected?
+		View contentView = getLayoutInflater().inflate(R.layout.about, null,
+				false);
+
+		AlertDialog alertDialog = new AlertDialog.Builder(this)
+				.setCustomTitle(null)
+				.setPositiveButton(android.R.string.ok, null)
+				.setView(contentView).create();
+
+		alertDialog.show();
+	}
 }
