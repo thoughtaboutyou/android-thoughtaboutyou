@@ -6,5 +6,6 @@
     <string name="app_version">0.0.1</string>
     <string name="logotype_content_description">Thought About You logotype</string>
     <string name="button">Think About Someone</string>
+    <string name="could_not_find_any_suitable_phone_numbers_to_call">Couldn\'t find any suitable phone numbers to call.</string>
 
 </resources>
