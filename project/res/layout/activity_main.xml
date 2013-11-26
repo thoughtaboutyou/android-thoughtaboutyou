@@ -16,6 +16,7 @@
         android:layout_centerVertical="true"
         adjustViewBounds="true"
         android:background="@drawable/redbutton"
+        android:contentDescription="@string/button_contentDescription"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="@string/button"

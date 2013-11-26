@@ -8,5 +8,6 @@
     <string name="button">Think About Someone</string>
     <string name="could_not_find_any_suitable_phone_numbers_to_call">Couldn\'t find any suitable phone numbers to call.</string>
     <string name="about_content">ThoughtAboutYou.net\n\nCopyright &#169; 2013 The Thought About You Project. All rights reserved.\n\nReleased to the public under the GNU Affero General Public License v3.\nhttps://www.gnu.org/licenses/agpl-3.0.html\n\nContact The Thought About You Project for additional licensing options.</string>
+    <string name="button_contentDescription">Think About Someone</string>
 
 </resources>
