@@ -10,14 +10,13 @@
 
     <Button
         android:id="@+id/thinkAboutSomeoneButton"
+        android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:layout_width="match_parent"        
-        android:paddingLeft="10dp"
-    	android:paddingRight="10dp"
-    	android:layout_centerHorizontal="true"
-    	android:layout_centerVertical="true"
-    	android:onClick=""
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:background="@drawable/redbutton"
-        android:text="@string/button" />    
-    
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/button" />
+
 </RelativeLayout>
