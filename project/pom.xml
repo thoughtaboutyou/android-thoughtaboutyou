@@ -169,9 +169,7 @@
 						<configuration>
 							<release>false</release>
 							<sign>
-							    <!-- TEMPORARY DEBUG ENABLE -->
-							    <!-- Should have value false -->
-								<debug>true</debug>
+								<debug>false</debug>
 							</sign>
 							<zipalign>
 								<skip>false</skip>
