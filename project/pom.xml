@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>net.thoughtaboutyou.app.android</groupId>
 		<artifactId>tay-android-parent</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 
 	<packaging>apk</packaging>
