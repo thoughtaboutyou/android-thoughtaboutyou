@@ -9,7 +9,7 @@
 ## Android
 
 ```bash
-sdkmanager --install 'platforms;android-19' 'build-tools;19.1.0'
+sdkmanager --install 'platforms;android-30' 'build-tools;30.0.3'
 ```
 
 ### Maven

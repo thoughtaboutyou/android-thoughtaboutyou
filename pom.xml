@@ -60,7 +60,7 @@
                     <configuration>
                         <sdk>
                             <!-- Android SDK Level -->
-                            <platform>19</platform>
+                            <platform>30</platform>
                         </sdk>
                         <emulator>
                             <avd>23</avd>
