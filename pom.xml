@@ -55,7 +55,7 @@
                 <plugin>
                     <groupId>com.simpligility.maven.plugins</groupId>
                     <artifactId>android-maven-plugin</artifactId>
-                    <version>4.0.0</version>
+                    <version>4.6.0</version>
                     <extensions>true</extensions>
                     <configuration>
                         <sdk>
@@ -98,7 +98,7 @@
                                     <pluginExecutionFilter>
                                         <groupId>com.simpligility.maven.plugins</groupId>
                                         <artifactId>android-maven-plugin</artifactId>
-                                        <versionRange>[4.0.0,)</versionRange>
+                                        <versionRange>[4.6.0,)</versionRange>
                                         <goals>
                                             <goal>manifest-update</goal>
                                         </goals>
