@@ -145,7 +145,6 @@
 										<include>${project.build.directory}/${project.artifactId}.apk</include>
 									</includes>
 									<verbose>true</verbose>
-									<alias>tay-andr</alias>
 									<arguments>
 										<argument>-sigalg</argument>
 										<argument>SHA1withRSA</argument>
@@ -155,6 +154,7 @@
 
 									<!-- Key and passwords aren't stored in the public repository -->
 									<!-- Start secrets -->
+									<alias>${sign.alias}</alias>
 									<keystore>${sign.keystore}</keystore>
 									<storepass>${sign.storepass}</storepass>
 									<keypass>${sign.keypass}</keypass>
