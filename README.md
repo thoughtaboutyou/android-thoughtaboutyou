@@ -22,7 +22,7 @@ Currently only tested for debug builds. Just launch TAY as an android applicatio
 
 ### Eclipse with Maven
 
-Install [Maven Integration for Eclipse (M2E)](http://eclipse.org/m2e/) and use Maven 3.1.1 or higher. M2E 1.4 is built against Maven 3.0.4, so it's recommended to [download M2E 1.5](http://eclipse.org/m2e/download/) or higher.
+Install [Maven Integration for Eclipse (M2E)](https://eclipse.org/m2e/) and use Maven 3.1.1 or higher. M2E 1.4 is built against Maven 3.0.4, so it's recommended to [download M2E 1.5](https://eclipse.org/m2e/download/) or higher.
 
 
 
@@ -33,7 +33,7 @@ Releases of [Thought About You](https://play.google.com/store/apps/details?id=ne
 
 ### Version numbers
 
-Follow the [Semantic Versioning specification](http://semver.org/).
+Follow the [Semantic Versioning specification](https://semver.org/).
 
 
 ### Signing
@@ -63,4 +63,4 @@ Released to the public under the [GNU Affero General Public License v3](https://
 
 
 
-[TAY]: http://thoughtaboutyou.net/
+[TAY]: https://thoughtaboutyou.net/

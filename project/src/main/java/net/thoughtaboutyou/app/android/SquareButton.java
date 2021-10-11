@@ -19,8 +19,8 @@ public class SquareButton extends Button {
 
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-		// http://stackoverflow.com/questions/4656986/how-do-i-keep-the-aspect-ratio-on-image-buttons-in-android
-		// http://stackoverflow.com/a/7979110/
+		// https://stackoverflow.com/questions/4656986/how-do-i-keep-the-aspect-ratio-on-image-buttons-in-android
+		// https://stackoverflow.com/a/7979110/
 		super.onMeasure(widthMeasureSpec, widthMeasureSpec);
 	}
 }
