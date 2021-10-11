@@ -6,6 +6,12 @@
 
 ## Builds
 
+## Android
+
+```bash
+sdkmanager --install 'platforms;android-19' 'build-tools;19.1.0'
+```
+
 ### Maven
 
 [Maven](https://maven.apache.org/) 3.1.1 or higher is required.
