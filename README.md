@@ -6,11 +6,13 @@
 
 ## Builds
 
-## Android
+
+### Android
 
 ```bash
 sdkmanager --install 'platforms;android-30' 'build-tools;30.0.3'
 ```
+
 
 ### Maven
 
@@ -31,6 +33,15 @@ Currently only tested for debug builds. Just launch TAY as an android applicatio
 Install [Maven Integration for Eclipse (M2E)](https://eclipse.org/m2e/) and use Maven 3.1.1 or higher. M2E 1.4 is built against Maven 3.0.4, so it's recommended to [download M2E 1.5](https://eclipse.org/m2e/download/) or higher.
 
 
+### Dependency and plugin updates
+
+```bash
+mvn versions:use-latest-versions
+```
+
+```bash
+mvn versions:display-plugin-updates
+```
 
 ## Releases
 
