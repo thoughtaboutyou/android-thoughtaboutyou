@@ -53,22 +53,28 @@ Releases of [Thought About You](https://play.google.com/store/apps/details?id=ne
 Follow the [Semantic Versioning specification](https://semver.org/).
 
 
-### Signing
-
-The signing certificate for `net.thoughtaboutyou.app.android` is secret. It is to be kept in your personal `~/.m2/settings.xml`, under the profile `tay-android-release`.
-
-
 ### Release build
 
 ```bash
 $ mvn -P release,tay-android-release clean install android:deploy android:run
 ```
 
-To manually verify that the APK has been signed properly
+
+### Signing
+
+The signing certificate for `net.thoughtaboutyou.app.android` is secret. It is to be kept in your personal `~/.m2/settings.xml`, under the profile `tay-android-release`.
+
+Android API level 30 APK files should have v1 signatures for backward compatibility and [requires v2 signatures](https://developer.android.com/about/versions/11/behavior-changes-11#minimum-signature-scheme) to run on Android 11. The same keystore file can be used to sign v1, v2, v3. These steps have not yet been automated in the current setup. Instead using a separate, manual signing step with [`uber-apk-signer`](https://github.com/patrickfav/uber-apk-signer).
 
 ```bash
-$ jarsigner -verify -verbose -certs target/tay-android.apk
+# NOTE: use secret keystore values, same as ~/.m2/settings.xml.
+# NOTE: check the output to verify that the APK verifications pass.
+java -jar 'uber-apk-signer-1.2.1.jar' --verbose --allowResign --apks './target/tay-android-signed-aligned.apk' --ks ".../tay-android-release.keystore" --ksAlias "..." --ksPass "..." --ksKeyPass "..." --out './target/apksigner-v1-v2-v3/'
+
+mv './target/apksigner-v1-v2-v3/tay-android-signed-aligned-aligned-signed.apk' './target/tay-android-release.apk'
 ```
+
+The final release output is `./target/tay-android-release.apk`.
 
 
 
