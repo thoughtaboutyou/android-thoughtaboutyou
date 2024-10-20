@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="about_license">Copyright &#169; 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021 The Thought About You Project. All rights reserved.\nReleased to the public under the GNU Affero General Public License v3.\nhttps://www.gnu.org/licenses/agpl-3.0.html\nContact The Thought About You Project for additional licensing options.</string>
+    <string name="about_license">Copyright &#169; 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 The Thought About You Project. All rights reserved.\nReleased to the public under the GNU Affero General Public License v3.\nhttps://www.gnu.org/licenses/agpl-3.0.html\nContact The Thought About You Project for additional licensing options.</string>
     <string name="action_about">About</string>
     <string name="app_name">Thought About You</string>
     <string name="app_version">1.0.3-SNAPSHOT</string>
